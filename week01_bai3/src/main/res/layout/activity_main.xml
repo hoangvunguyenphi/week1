@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="Chuyển đổi năm dương lịch"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewDL"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewTitle"
+        android:paddingTop="10dp"
+        android:text="Năm dương lịch:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextDL"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btnToF"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextDL"
+        android:onClick="convertDLtoAL"
+        android:text="Chuyển sang âm lịch" />
+
+    <TextView
+        android:id="@+id/textViewAL"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnToF"
+        android:paddingTop="10dp"
+        android:text="Năm âm lịch:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewKq"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnToF"
+        android:background="?android:attr/colorPressedHighlight" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewKq"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMessage"
+        android:background="@android:color/holo_blue_dark" />
+
+</RelativeLayout>

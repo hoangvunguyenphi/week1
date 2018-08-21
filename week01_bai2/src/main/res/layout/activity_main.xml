@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <TextView
+        android:id="@+id/textViewDoF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Độ F:"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/editTextDoF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDoF" />
+    <TextView
+        android:id="@+id/textViewDoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/editTextDoF"
+        android:text="Độ C:"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/editTextDoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDoC" />
+
+    <TextView
+        android:id="@+id/textViewThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDoC"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btnToC"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewThongBao"
+        android:onClick="FtoC"
+        android:text="Chuyển sang độ C" />
+
+    <Button
+        android:id="@+id/btnToF"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewThongBao"
+        android:onClick="CtoF"
+        android:text="Chuyển sang độ F" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnToF"
+        android:onClick="clear"
+        android:text="Xoá rỗng" />
+
+</RelativeLayout>
